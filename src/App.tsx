@@ -1,13 +1,14 @@
-import React from 'react';
-import TodoInput from './components/todoInput';
-import TodoList from './components/TodoList';
+import React from "react";
+import Todos from "./components/Todos";
+import DisplayTodos from "./components/DisplayTodos";
+import "./App.css";
 
 const App: React.FC = () => {
   return (
-    <div style={{ padding: 20 }}>
-      <h1>To-Do List</h1>
-      <TodoInput />
-      <TodoList />
+    <div className="App">
+      <h1>Redux Toolkit To-do App</h1>
+      <Todos />
+      <DisplayTodos />
     </div>
   );
 };
