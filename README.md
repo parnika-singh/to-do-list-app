@@ -1,54 +1,82 @@
-# React + TypeScript + Vite
+# 📝 Redux Toolkit To-do App (React + TypeScript)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and stylish To-do List app built using **React**, **Redux Toolkit**, and **TypeScript**. This project demonstrates core concepts of Redux including **slicing**, **action dispatching**, and **state management** in a real-world example.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📸 Screenshot
 
-## Expanding the ESLint configuration
+![image](https://github.com/user-attachments/assets/915d09c4-336b-48a1-891b-9e39419e4d27)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🎯 Features
+
+- Add new to-do items
+- Mark tasks as completed
+- Edit to-do items inline
+- Remove tasks
+- Filter tasks by **Active**, **Completed**, or **All**
+- Smooth animations with **Framer Motion**
+- Fully responsive and centered UI
+- Built using Redux Toolkit's `createSlice`
+
+---
+
+## 📦 Technologies Used
+
+- React
+- TypeScript
+- Redux Toolkit
+- React Redux
+- Framer Motion
+- CSS (Custom + Google Fonts)
+
+---
+
+## 📁 Folder Structure
+```
+src/
+├── components/
+│ ├── Todos.tsx
+│ ├── DisplayTodos.tsx
+│ └── TodoItem.tsx
+├── redux/
+│ ├── store.ts
+│ └── reducer.ts
+├── App.tsx
+├── main.tsx
+└── App.css
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+### 1. Clone the repository
+
+git clone https://github.com/your-username/redux-typescript-todo-app.git
+cd redux-typescript-todo-app
+
+### 2. Install dependencies
+
+npm install or yarn install
+
+### 3. Run the development server
+
+npm run dev or yarn dev
+
+## App will be running at:
+👉 http://localhost:5173
+
+---
+
+## 🛠 Build for production
+
+npm run build or yarn build
+
+---
+
+## 🙌 Contributing
+Contributions are welcome! Fork the repo, make changes, and create a pull request.
